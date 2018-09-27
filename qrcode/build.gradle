@@ -41,8 +41,8 @@ dependencies {
 
 
 
-def siteUrl = 'https://github.com/hanswook/http-util'                        // #CONFIG# // project homepage
-def gitUrl = 'https://github.com/hanswook/http-util.git'                     // #CONFIG# // project git
+def siteUrl = 'https://github.com/hanswook/scanQRCode'                        // #CONFIG# // project homepage
+def gitUrl = 'https://github.com/hanswook/scanQRCode.git'                     // #CONFIG# // project git
 group = "com.hanwook"
 
 install {
@@ -107,7 +107,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"  //发布到Bintray的那个仓库里，默认账户有四个库，我们这里上传到maven库
-        name = "http-util"  //需更改，这个名字就是你在Bintray上创建Package的名字，这里会查询，如果此包不存在就会创建一个。
+        name = "qrcode"  //需更改，这个名字就是你在Bintray上创建Package的名字，这里会查询，如果此包不存在就会创建一个。
         userOrg = 'hanwook'    //组织名称 organization
         websiteUrl = siteUrl
         vcsUrl = gitUrl
